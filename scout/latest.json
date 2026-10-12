@@ -1,8 +1,14 @@
 {
- "ran_at": "2026-10-12T08:17:12.317Z",
- "fits": [],
+ "ran_at": "2026-10-12T08:18:20.923Z",
+ "fits": [
+  {
+   "src": "hn-hiring",
+   "author": "QMJobs",
+   "text": "Quantum Minds | Senior Software Engineer – LLVM Fuzzing Program Analysis | Contract | REMOTE (US) | Full-Time Quantum Minds is hiring a senior engineer to support a modern analysis pipeline involving compiler tooling, program analysis, fuzzing, and automation. The work includes preparing the codebas"
+  }
+ ],
  "notes": [
-  "hn-hiring failed: ReferenceError: Cannot access 'want' before initialization",
+  "hn-hiring story 49922569: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
   "left-pad-rs: 7 downloads",
   "q-promise-rs: 7 downloads",
