@@ -3,7 +3,7 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 
 const FIT = /contract|freelance|freelancer|gig|part-time|part time|fractional|consult|bounty/i;
-const STACK = /wordpress|wp |woocommerce|bot|telegram|scrap|automation|zapier|chrome extension|node\.?js|typescript|rust|api integration|dashboard|landing page/i;
+const STACK = /wordpress|woocommerce|telegram|bot[\s\S]{0,40}\$|scrap|automation|zapier|chrome extension|node\.?js|typescript|rust|api integration|landing page|app password/i;
 const strip = (h) => h.replace(/<[^>]+>/g, " ").replace(/&[^;]+;/g, " ").slice(0, 600);
 const jget = async (u) => (await fetch(u, { headers: { "User-Agent": "obv-scout/1.0" } })).json();
 
@@ -11,12 +11,16 @@ const out = { ran_at: new Date().toISOString(), fits: [], notes: [] };
 
 // 1. Latest "Who is hiring?" thread (Algolia, newest story by whoishiring)
 try {
-  const s = await jget("https://hn.algolia.com/api/v1/search?query=Who%20is%20hiring&tags=story,author_whoishiring&hitsPerPage=1");
-  const id = s.hits[0].objectID;
+  const s = await jget("https://hn.algolia.com/api/v1/search?query=Who%20is%20hiring&tags=story,author_whoishiring&hitsPerPage=5");
+  const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+  const now = new Date();
+  const want = months[now.getMonth()] + " " + now.getFullYear();
+  const hit = s.hits.find((h) => (h.title || "").toLowerCase().includes(want)) || s.hits[0];
+  const id = hit.objectID;
   const c = await jget(`https://hn.algolia.com/api/v1/search?tags=comment,story_${id}&hitsPerPage=100`);
   for (const h of c.hits) {
     const t = strip(h.comment_text || "");
-    if (t.length > 200 && FIT.test(t) && (STACK.test(t) || /remote/i.test(t)))
+    if (t.length > 200 && FIT.test(t) && STACK.test(t))
       out.fits.push({ src: "hn-hiring", author: h.author, text: t.slice(0, 300) });
   }
   out.notes.push(`hn-hiring story ${id}: ${c.hits.length} comments scanned`);
