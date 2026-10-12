@@ -1,8 +1,8 @@
 {
- "ran_at": "2026-10-12T08:15:15.305Z",
+ "ran_at": "2026-10-12T08:16:43.753Z",
  "fits": [],
  "notes": [
-  "hn-hiring story 22665398: 100 comments scanned",
+  "hn-hiring failed: ReferenceError: Cannot access 'want' before initialization",
   "truelancer: 0 titles, 0 keyword hits",
   "left-pad-rs: 7 downloads",
   "q-promise-rs: 7 downloads",
