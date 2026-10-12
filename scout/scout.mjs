@@ -11,11 +11,11 @@ const out = { ran_at: new Date().toISOString(), fits: [], notes: [] };
 
 // 1. Latest "Who is hiring?" thread (Algolia, newest story by whoishiring)
 try {
-  const wantQ = encodeURIComponent("Who is hiring " + want);
-  const s = await jget(`https://hn.algolia.com/api/v1/search?query=${wantQ}&tags=story,author_whoishiring&hitsPerPage=5`);
   const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
   const now = new Date();
   const want = months[now.getMonth()] + " " + now.getFullYear();
+  const wantQ = encodeURIComponent("Who is hiring " + want);
+  const s = await jget(`https://hn.algolia.com/api/v1/search?query=${wantQ}&tags=story,author_whoishiring&hitsPerPage=5`);
   const hit = s.hits.find((h) => (h.title || "").toLowerCase().includes(want)) || s.hits[0];
   const id = hit.objectID;
   const c = await jget(`https://hn.algolia.com/api/v1/search?tags=comment,story_${id}&hitsPerPage=100`);
