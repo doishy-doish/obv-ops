@@ -1,0 +1,34 @@
+name: obv-scout
+on:
+  schedule:
+    - cron: "15 6,18 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scout/scout.mjs
+      - name: commit latest.json
+        run: |
+          git config user.name "obv-scout"
+          git config user.email "obv-scout@local"
+          git add scout/latest.json
+          git diff --cached --quiet || git commit -m "scout $(date -u +%F-%H%M)"
+          git push
+      - name: open issue on fits
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          FITS=$(node -e "console.log(require('./scout/latest.json').fits.length)")
+          OPEN=$(gh issue list --label scout --state open --json number -q length)
+          if [ "$FITS" -gt 0 ] && [ "$OPEN" -eq 0 ]; then
+            gh issue create --label scout --title "scout: $FITS fits $(date -u +%F)" \
+              --body "See scout/latest.json. Triage, then close."
+          fi
