@@ -1,5 +1,5 @@
 {
- "ran_at": "2026-10-13T14:09:00.746Z",
+ "ran_at": "2026-10-13T22:43:08.259Z",
  "fits": [
   {
    "src": "hn-hiring",
@@ -15,8 +15,8 @@
  "notes": [
   "hn-hiring story 49922569: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
-  "left-pad-rs: 8 downloads",
-  "q-promise-rs: 8 downloads",
-  "brain-nn-rs: 10 downloads"
+  "left-pad-rs: 9 downloads",
+  "q-promise-rs: 9 downloads",
+  "brain-nn-rs: 11 downloads"
  ]
 }
