@@ -1,6 +1,11 @@
 {
- "ran_at": "2026-10-13T00:37:34.813Z",
+ "ran_at": "2026-10-13T14:09:00.746Z",
  "fits": [
+  {
+   "src": "hn-hiring",
+   "author": "adi_singh_21",
+   "text": "Irash Tech | Business Development Manager (Freelance, Commission-only) | REMOTE (Worldwide) | Contract Irash Tech is a small AI-focused development agency based in Hyderabad, India. We build web apps (Next.js, React, Node), mobile apps (React Native Expo) and AI automation (LLM integrations, RAG, do"
+  },
   {
    "src": "hn-hiring",
    "author": "QMJobs",
@@ -10,8 +15,8 @@
  "notes": [
   "hn-hiring story 49922569: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
-  "left-pad-rs: 7 downloads",
-  "q-promise-rs: 7 downloads",
-  "brain-nn-rs: 8 downloads"
+  "left-pad-rs: 8 downloads",
+  "q-promise-rs: 8 downloads",
+  "brain-nn-rs: 10 downloads"
  ]
 }
