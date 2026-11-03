@@ -1,14 +1,19 @@
 {
- "ran_at": "2026-11-02T15:46:38.940Z",
+ "ran_at": "2026-11-03T00:56:19.679Z",
  "fits": [
   {
    "src": "hn-hiring",
-   "author": "atramyar",
-   "text": "Backblaze | Business Intelligence, Marketing, CTO, Product Management, and Sales | Full-time and Contract | Hybrid | San Mateo Backblaze is a public company that makes it astonishingly easy to store, use, and protect data. When our founding team got together, they committed to helping people save th"
+   "author": "jandekkers",
+   "text": "Location: Huntington Beach, CA, USA\nRemote: Yes\nWilling to relocate: No\nTechnologies: C# .NET, TypeScript, React, PostgreSQL, Linux, AI-assisted development (Claude Code and similar)\nRésumé CV:  https:  aiwebcenter.com about resume  \nEmail: hello@aiwebcenter.com Fractional CTO and contract work: web"
+  },
+  {
+   "src": "hn-hiring",
+   "author": "fires10",
+   "text": "Data Micro Technologies | Multiple Roles (OT, Networking, Security) | Jacksonville, FL | ONSITE Data Micro Technologies provides specialized systems engineering, operational technology (OT), and infrastructure consulting. The interview process will not be long and drawn out. We want to fill these ro"
   }
  ],
  "notes": [
-  "hn-hiring story 38099086: 100 comments scanned",
+  "hn-hiring story 50338728: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
   "left-pad-rs: 10 downloads",
   "q-promise-rs: 10 downloads",
