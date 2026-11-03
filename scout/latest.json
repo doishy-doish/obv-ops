@@ -1,15 +1,10 @@
 {
- "ran_at": "2026-11-03T00:56:19.679Z",
+ "ran_at": "2026-11-03T14:09:14.063Z",
  "fits": [
   {
    "src": "hn-hiring",
    "author": "jandekkers",
    "text": "Location: Huntington Beach, CA, USA\nRemote: Yes\nWilling to relocate: No\nTechnologies: C# .NET, TypeScript, React, PostgreSQL, Linux, AI-assisted development (Claude Code and similar)\nRésumé CV:  https:  aiwebcenter.com about resume  \nEmail: hello@aiwebcenter.com Fractional CTO and contract work: web"
-  },
-  {
-   "src": "hn-hiring",
-   "author": "fires10",
-   "text": "Data Micro Technologies | Multiple Roles (OT, Networking, Security) | Jacksonville, FL | ONSITE Data Micro Technologies provides specialized systems engineering, operational technology (OT), and infrastructure consulting. The interview process will not be long and drawn out. We want to fill these ro"
   }
  ],
  "notes": [
