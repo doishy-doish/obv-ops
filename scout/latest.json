@@ -1,12 +1,6 @@
 {
- "ran_at": "2026-11-05T14:37:02.637Z",
- "fits": [
-  {
-   "src": "hn-hiring",
-   "author": "egemen_orl",
-   "text": "Location: Edirne, Turkey\nRemote: Yes (remote only)\nWilling to relocate: No\nTechnologies: Python, scikit-learn, XGBoost, Hugging Face (BERT), RAG (Chroma, Gemini API), Streamlit, FastAPI, Node.js Express, Next.js, TypeScript, Tailwind, Git\nRésumé CV:  https:  egemenoral.com \nGitHub:  https:  github.c"
-  }
- ],
+ "ran_at": "2026-11-05T23:37:39.686Z",
+ "fits": [],
  "notes": [
   "hn-hiring story 50338728: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
