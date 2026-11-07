@@ -1,6 +1,12 @@
 {
- "ran_at": "2026-11-06T23:06:15.397Z",
- "fits": [],
+ "ran_at": "2026-11-07T12:57:09.604Z",
+ "fits": [
+  {
+   "src": "hn-hiring",
+   "author": "mustafadalga",
+   "text": "Location: Estonia Remote:Yes Willing to relocate: No Technologies: React.js,Vue.js, Next.js,Nuxt.js ,TypeScript, SCSS, CSS3, Tailwind CSS, Redux, Zustand Part-time Freelance: Yes Linkedin:  https:  www.linkedin.com in mustafadalga   Contact info: mustafadalga \\[at\\] gmail \\[dot\\] com Front-end engin"
+  }
+ ],
  "notes": [
   "hn-hiring story 50338728: 100 comments scanned",
   "truelancer: 0 titles, 0 keyword hits",
